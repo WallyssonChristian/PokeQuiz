@@ -14,6 +14,7 @@ public class Quiz1Activity extends AppCompatActivity {
     Button bt_resp2;
     Button bt_resp3;
     Button bt_respCerta;
+    //o que acontece
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
