@@ -5,9 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz2Activity extends AppCompatActivity {
 
     // Declarando variaveis
     Button bt_resp1;
@@ -18,13 +17,13 @@ public class Quiz1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz2);
 
         //Preenchendo variaveis
-        bt_resp1 = (Button) findViewById(R.id.bt_tq1_respErrada1);
-        bt_resp2 = (Button) findViewById(R.id.bt_tq1_respErrada2);
-        bt_resp3 = (Button) findViewById(R.id.bt_tq1_respErrada3);
-        bt_respCerta = (Button) findViewById(R.id.bt_tq1_respCerta);
+        bt_resp1 = (Button) findViewById(R.id.bt_tq2_respErrada1);
+        bt_resp2 = (Button) findViewById(R.id.bt_tq2_respErrada2);
+        bt_resp3 = (Button) findViewById(R.id.bt_tq2_respErrada3);
+        bt_respCerta = (Button) findViewById(R.id.bt_tq2_respCerta);
 
         bt_respCerta.setOnClickListener(escutabotao);
         bt_resp1.setOnClickListener(escutabotao);
@@ -32,19 +31,18 @@ public class Quiz1Activity extends AppCompatActivity {
         bt_resp3.setOnClickListener(escutabotao);
     }
 
-
     private View.OnClickListener escutabotao = new View.OnClickListener() {
 
         @Override
         public void onClick(View v) {
             final Button botaoResp = (Button) findViewById(v.getId());
             if (botaoResp.equals(bt_respCerta)) {
-                Score.setScore(Score.getScore(Quiz1Activity.this) + 1, Quiz1Activity.this);
+                Score.setScore(Score.getScore(Quiz2Activity.this) + 1, Quiz2Activity.this);
                 //Intent telaLoser = new Intent(Quiz1Activity.this, LoserActivity.class);
                 //startActivity(telaLoser);
             }
-            Intent telaQuiz2 = new Intent(Quiz1Activity.this, Quiz2Activity.class);
-            startActivity(telaQuiz2);
+            Intent telaQuiz3 = new Intent(Quiz2Activity.this, Quiz3Activity.class);
+            startActivity(telaQuiz3);
 
             finish();
         }
