@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/tela_score"
+    android:gravity="center_horizontal|end"
     android:orientation="vertical"
-    tools:context="com.example.administrador.meuprimeiroquiz.ScoreActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="com.example.administrador.meuprimeiroquiz.ScoreActivity">
 
     <TextView
         android:id="@+id/tv_titulo"
@@ -19,15 +20,30 @@
         android:textColor="@android:color/background_light"
         android:textSize="28sp" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
     <TextView
         android:id="@+id/tv_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
-        android:layout_weight="0.21"
+        android:layout_weight="0.22"
         android:gravity="center_vertical|center_horizontal"
         android:text="0"
         android:textColor="@android:color/background_light"
         android:textSize="32sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <ImageButton
+        android:id="@+id/bt_tscore_back"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/backbutton" />
 
 </LinearLayout>

@@ -1,3 +1,28 @@
 <resources>
+    <!-- Tela Inicial -->
     <string name="app_name">PokeQuiz</string>
+    <string name="botao_go">Go</string>
+
+    <!-- Tela 1 -->
+    <string name="ask1">Totodile é um pokemon inicial de qual região?</string>
+    <string name="hoenn">Hoenn</string>
+    <string name="kanto">Kanto</string>
+    <string name="sinnoh">Sinnoh</string>
+    <string name="johto">Johto</string>
+
+    <!-- Tela 2 -->
+    <string name="ask2">Qual desses pokemon não é um passaro lendário?</string>
+    <string name="Pidgeot">Pidgeot</string>
+    <string name="Zapdos">Zapdos</string>
+    <string name="Articuno">Articuno</string>
+    <string name="Moltres">Moltres</string>
+
+    <!-- Tela 3 -->
+    <string name="ask3">Pokemon do tipo grama tem vantagem contra qual tipo?</string>
+    <string name="Gelo">Gelo</string>
+    <string name="Elétrico">Elétrico</string>
+    <string name="Pedra">Pedra</string>
+    <string name="Inseto">Inseto</string>
+
+
 </resources>
