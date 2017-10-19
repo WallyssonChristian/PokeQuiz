@@ -10,33 +10,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity
             android:name=".Quiz1Activity"
             android:screenOrientation="portrait"
-            />
+            android:launchMode="singleTop"/>
 
         <activity
             android:name=".WinnerActivity"
             android:screenOrientation="portrait"
-            />
+            android:launchMode="singleTop"/>
 
         <activity
             android:name=".LoserActivity"
             android:screenOrientation="portrait"
-            />
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".Quiz2Activity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".Quiz3Activity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".ScoreActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
 
     </application>
 
