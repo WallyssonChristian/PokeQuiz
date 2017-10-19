@@ -16,12 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         // Preenchendo as variaveis
         bt_play = (Button) findViewById(R.id.bt_t1_start);
-        // Zerando Score
-        Score.setScore(0, MainActivity.this);
 
         // Botao Play ( GO )
         bt_play.setOnClickListener(new View.OnClickListener() {
@@ -32,5 +28,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        onResume();
+    }
+
+    // Zerando Score
+    protected void onResume(){
+        super.onResume();
+        Score.setScore(0, MainActivity.this);
     }
 }

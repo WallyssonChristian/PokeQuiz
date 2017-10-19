@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/tela1_totodile"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context="com.example.administrador.meuprimeiroquiz.Quiz1Activity"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_tq1_ask"
@@ -102,5 +102,21 @@
             android:text="@string/johto" />
 
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_asks"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="-2dp"
+        android:layout_weight="0.03"
+        android:elevation="1dp"
+        android:progress="0"
+        android:progressBackgroundTint="?attr/colorControlHighlight"
+        android:progressTint="?android:attr/colorControlNormal" />
 
 </LinearLayout>
